@@ -15,9 +15,37 @@
             text-align: center;
             margin-top: 50px;
         }
+        .bio {
+            display: none;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff0f6;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: #e91e63;
+            cursor: pointer;
+        }
     </style>
+    <script>
+        function mostrarBio() {
+            document.getElementById("bio").style.display = "block";
+        }
+    </script>
 </head>
 <body>
-    <h1>Manuela Estrada</h1>
+    <h1><a onclick="mostrarBio()">Manuela Estrada</a></h1>
+
+    <div id="bio" class="bio">
+        <h2>Sobre mí</h2>
+        <p>Soy Manuela Estrada, una joven apasionada por el deporte y el emprendimiento. 
+        Actualmente estudio Gerencia de Comercio Electrónico en la Universidad de Panamá 
+        y soy fundadora de <strong>OverSwim</strong>, un proyecto que busca motivar y enseñar 
+        la natación como una herramienta de superación personal.</p>
+    </div>
 </body>
 </html>
